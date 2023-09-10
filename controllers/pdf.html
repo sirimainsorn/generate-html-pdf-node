@@ -21,6 +21,12 @@
       th.address p {
         margin: 0 !important;
       }
+
+      .invoice-no {
+        padding: 1mm;
+        display: flex;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
@@ -29,10 +35,12 @@
         <tr>
           <th class="address" width="45%">
             <p>Address 1</p>
+            <p><%= address1 %></p>
+            <p><%= state1 %></p>
           </th>
           <th width="65%" rowspan="3">
-            <div>
-              <div style="border: 1px solid #000">1234567890</div>
+            <div class="invoice-no">
+              <div style="border: 1px solid #000">Invoice No: <%= invoiceNo %></div>
             </div>
           </th>
         </tr>
